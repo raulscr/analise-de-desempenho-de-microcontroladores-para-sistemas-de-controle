@@ -105,6 +105,29 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1392334602.1629072987" name="/" resourcePath="pid_lib">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.851149199" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug" unusedChildren="">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.prefix.1921295809.641204791" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix.1921295809"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1832114463.843969380" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu.1832114463"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1134228324.1503232365" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.1134228324"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.core.1083960614.1907291367" name="Core" superClass="fr.ac6.managedbuild.option.gnu.cross.core.1083960614"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.instructionSet.1426875545.70827620" name="Instruction Set" superClass="fr.ac6.managedbuild.option.gnu.cross.instructionSet.1426875545"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1500625636.807500892" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1500625636"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.1734189057.1917623320" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.1734189057"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.729676500" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.4362838">
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1277790076" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.884476066" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.321781390" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1141142829"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1367594975" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.706778627"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1208688537" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.658863807"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1468876323" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver.1307120161"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.393023692" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.1471947885">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.445038622" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1222475658" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
@@ -234,9 +257,10 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
-		<configuration artifactName="${ProjName}" configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="PID_STM32F1"/>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/PID_STM32F1"/>
 		</configuration>
+		<configuration configurationName="Release"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="scannerConfiguration">

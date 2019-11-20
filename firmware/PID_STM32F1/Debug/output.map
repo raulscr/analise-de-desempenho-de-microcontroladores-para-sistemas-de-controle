@@ -470,8 +470,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x853 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
  .debug_macro   0x00000000       0x1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
  .debug_macro   0x00000000       0x83 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
- .debug_line    0x00000000      0xa80 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
- .debug_str     0x00000000    0x720a5 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_line    0x00000000      0xb68 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_str     0x00000000    0x720df Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
  .comment       0x00000000       0x80 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
  .debug_frame   0x00000000      0x208 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
  .ARM.attributes
@@ -788,8 +788,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x853 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .debug_macro   0x00000000       0x1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .debug_macro   0x00000000       0x83 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
- .debug_line    0x00000000      0xb4c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
- .debug_str     0x00000000    0x71dff Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_line    0x00000000      0xc34 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_str     0x00000000    0x71e39 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .comment       0x00000000       0x80 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .debug_frame   0x00000000      0x210 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .ARM.attributes
@@ -949,8 +949,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x853 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .debug_macro   0x00000000       0x1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .debug_macro   0x00000000       0x83 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
- .debug_line    0x00000000      0x906 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
- .debug_str     0x00000000    0x71d1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
+ .debug_line    0x00000000      0x9ee Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
+ .debug_str     0x00000000    0x71d59 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .comment       0x00000000       0x80 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .debug_frame   0x00000000      0x214 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .ARM.attributes
@@ -1115,8 +1115,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x853 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .debug_macro   0x00000000       0x1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .debug_macro   0x00000000       0x83 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
- .debug_line    0x00000000      0x955 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
- .debug_str     0x00000000    0x71ecd Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
+ .debug_line    0x00000000      0xa3d Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
+ .debug_str     0x00000000    0x71f07 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .comment       0x00000000       0x80 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .debug_frame   0x00000000      0x258 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .ARM.attributes
@@ -1387,8 +1387,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x853 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .debug_macro   0x00000000       0x1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .debug_macro   0x00000000       0x83 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
- .debug_line    0x00000000      0x745 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
- .debug_str     0x00000000    0x71a59 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
+ .debug_line    0x00000000      0x82d Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
+ .debug_str     0x00000000    0x71a93 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .comment       0x00000000       0x80 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .debug_frame   0x00000000       0x78 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .ARM.attributes
@@ -1556,8 +1556,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x853 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .debug_macro   0x00000000       0x1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .debug_macro   0x00000000       0x83 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
- .debug_line    0x00000000      0x8b4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
- .debug_str     0x00000000    0x71f8d Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
+ .debug_line    0x00000000      0x99c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
+ .debug_str     0x00000000    0x71fc7 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .comment       0x00000000       0x80 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .debug_frame   0x00000000      0x270 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .ARM.attributes
@@ -2372,16 +2372,15 @@ Discarded input sections
  .data          0x00000000        0x0 Src/main.o
  .bss           0x00000000        0x0 Src/main.o
  .debug_macro   0x00000000      0xa60 Src/main.o
- .debug_macro   0x00000000      0x16f Src/main.o
- .debug_macro   0x00000000       0x2e Src/main.o
- .debug_macro   0x00000000       0x22 Src/main.o
  .debug_macro   0x00000000       0x22 Src/main.o
  .debug_macro   0x00000000       0x8e Src/main.o
  .debug_macro   0x00000000       0x51 Src/main.o
  .debug_macro   0x00000000       0xef Src/main.o
  .debug_macro   0x00000000       0x6a Src/main.o
  .debug_macro   0x00000000      0x1df Src/main.o
- .debug_macro   0x00000000       0x34 Src/main.o
+ .debug_macro   0x00000000      0x16f Src/main.o
+ .debug_macro   0x00000000       0x2e Src/main.o
+ .debug_macro   0x00000000       0x22 Src/main.o
  .debug_macro   0x00000000       0x34 Src/main.o
  .debug_macro   0x00000000      0xb8e Src/main.o
  .debug_macro   0x00000000     0xe911 Src/main.o
@@ -2859,33 +2858,38 @@ Discarded input sections
  .group         0x00000000        0xc pid_lib/pidlib.o
  .group         0x00000000        0xc pid_lib/pidlib.o
  .group         0x00000000        0xc pid_lib/pidlib.o
- .group         0x00000000        0xc pid_lib/pidlib.o
  .text          0x00000000        0x0 pid_lib/pidlib.o
  .data          0x00000000        0x0 pid_lib/pidlib.o
  .bss           0x00000000        0x0 pid_lib/pidlib.o
  .debug_macro   0x00000000      0xa60 pid_lib/pidlib.o
  .debug_macro   0x00000000       0x22 pid_lib/pidlib.o
- .debug_macro   0x00000000       0x18 pid_lib/pidlib.o
- .debug_macro   0x00000000       0x35 pid_lib/pidlib.o
- .debug_macro   0x00000000       0x34 pid_lib/pidlib.o
- .debug_macro   0x00000000       0x58 pid_lib/pidlib.o
- .debug_macro   0x00000000       0x1f pid_lib/pidlib.o
- .debug_macro   0x00000000       0x43 pid_lib/pidlib.o
- .debug_macro   0x00000000       0x20 pid_lib/pidlib.o
- .debug_macro   0x00000000      0x18e pid_lib/pidlib.o
- .debug_macro   0x00000000      0x330 pid_lib/pidlib.o
- .debug_macro   0x00000000       0x35 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x8e pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x51 pid_lib/pidlib.o
  .debug_macro   0x00000000       0xef pid_lib/pidlib.o
  .debug_macro   0x00000000       0x6a pid_lib/pidlib.o
  .debug_macro   0x00000000      0x1df pid_lib/pidlib.o
  .debug_macro   0x00000000      0x16f pid_lib/pidlib.o
  .debug_macro   0x00000000       0x2e pid_lib/pidlib.o
  .debug_macro   0x00000000       0x22 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x3a pid_lib/pidlib.o
  .debug_macro   0x00000000       0x34 pid_lib/pidlib.o
  .debug_macro   0x00000000      0xb8e pid_lib/pidlib.o
  .debug_macro   0x00000000     0xe911 pid_lib/pidlib.o
  .debug_macro   0x00000000       0x43 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x5e pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x18 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x35 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x34 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x16 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x97 pid_lib/pidlib.o
+ .debug_macro   0x00000000      0x330 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0xfd pid_lib/pidlib.o
  .debug_macro   0x00000000       0x10 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x58 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x1f pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x43 pid_lib/pidlib.o
+ .debug_macro   0x00000000       0x20 pid_lib/pidlib.o
+ .debug_macro   0x00000000      0x18e pid_lib/pidlib.o
  .debug_macro   0x00000000       0x10 pid_lib/pidlib.o
  .debug_macro   0x00000000       0x1c pid_lib/pidlib.o
  .debug_macro   0x00000000       0x52 pid_lib/pidlib.o
@@ -2930,15 +2934,15 @@ Discarded input sections
  .text.q15_mult
                 0x00000000       0x2e pid_lib/qn_lib/q15lib.o
  .text.q15_div  0x00000000       0x2e pid_lib/qn_lib/q15lib.o
- .debug_info    0x00000000      0x18d pid_lib/qn_lib/q15lib.o
+ .debug_info    0x00000000      0x171 pid_lib/qn_lib/q15lib.o
  .debug_abbrev  0x00000000       0xaa pid_lib/qn_lib/q15lib.o
  .debug_aranges
                 0x00000000       0x40 pid_lib/qn_lib/q15lib.o
  .debug_ranges  0x00000000       0x30 pid_lib/qn_lib/q15lib.o
  .debug_macro   0x00000000       0x25 pid_lib/qn_lib/q15lib.o
  .debug_macro   0x00000000      0xa60 pid_lib/qn_lib/q15lib.o
- .debug_line    0x00000000       0xc9 pid_lib/qn_lib/q15lib.o
- .debug_str     0x00000000     0x2ddd pid_lib/qn_lib/q15lib.o
+ .debug_line    0x00000000      0x107 pid_lib/qn_lib/q15lib.o
+ .debug_str     0x00000000     0x2e13 pid_lib/qn_lib/q15lib.o
  .comment       0x00000000       0x80 pid_lib/qn_lib/q15lib.o
  .debug_frame   0x00000000       0xd8 pid_lib/qn_lib/q15lib.o
  .ARM.attributes
@@ -2955,15 +2959,15 @@ Discarded input sections
  .text.q31_mult
                 0x00000000       0x22 pid_lib/qn_lib/q31lib.o
  .text.q31_div  0x00000000       0x22 pid_lib/qn_lib/q31lib.o
- .debug_info    0x00000000      0x18d pid_lib/qn_lib/q31lib.o
+ .debug_info    0x00000000      0x171 pid_lib/qn_lib/q31lib.o
  .debug_abbrev  0x00000000       0xaa pid_lib/qn_lib/q31lib.o
  .debug_aranges
                 0x00000000       0x40 pid_lib/qn_lib/q31lib.o
  .debug_ranges  0x00000000       0x30 pid_lib/qn_lib/q31lib.o
  .debug_macro   0x00000000       0x25 pid_lib/qn_lib/q31lib.o
  .debug_macro   0x00000000      0xa60 pid_lib/qn_lib/q31lib.o
- .debug_line    0x00000000       0xc4 pid_lib/qn_lib/q31lib.o
- .debug_str     0x00000000     0x2ddd pid_lib/qn_lib/q31lib.o
+ .debug_line    0x00000000      0x103 pid_lib/qn_lib/q31lib.o
+ .debug_str     0x00000000     0x2e13 pid_lib/qn_lib/q31lib.o
  .comment       0x00000000       0x80 pid_lib/qn_lib/q31lib.o
  .debug_frame   0x00000000       0xd8 pid_lib/qn_lib/q31lib.o
  .ARM.attributes
@@ -2979,15 +2983,15 @@ Discarded input sections
  .text.q7_sum   0x00000000       0x4c pid_lib/qn_lib/q7lib.o
  .text.q7_mult  0x00000000       0x36 pid_lib/qn_lib/q7lib.o
  .text.q7_div   0x00000000       0x30 pid_lib/qn_lib/q7lib.o
- .debug_info    0x00000000      0x18d pid_lib/qn_lib/q7lib.o
+ .debug_info    0x00000000      0x171 pid_lib/qn_lib/q7lib.o
  .debug_abbrev  0x00000000       0xaa pid_lib/qn_lib/q7lib.o
  .debug_aranges
                 0x00000000       0x40 pid_lib/qn_lib/q7lib.o
  .debug_ranges  0x00000000       0x30 pid_lib/qn_lib/q7lib.o
  .debug_macro   0x00000000       0x25 pid_lib/qn_lib/q7lib.o
  .debug_macro   0x00000000      0xa60 pid_lib/qn_lib/q7lib.o
- .debug_line    0x00000000       0xc5 pid_lib/qn_lib/q7lib.o
- .debug_str     0x00000000     0x2dd5 pid_lib/qn_lib/q7lib.o
+ .debug_line    0x00000000      0x104 pid_lib/qn_lib/q7lib.o
+ .debug_str     0x00000000     0x2e0b pid_lib/qn_lib/q7lib.o
  .comment       0x00000000       0x80 pid_lib/qn_lib/q7lib.o
  .debug_frame   0x00000000       0xd8 pid_lib/qn_lib/q7lib.o
  .ARM.attributes
@@ -3680,7 +3684,7 @@ OUTPUT(PID_STM32F1.elf elf32-littlearm)
  .debug_ranges  0x000008e8       0x20 pid_lib/pidlib.o
  .debug_ranges  0x00000908       0x20 startup/startup_stm32f103xb.o
 
-.debug_macro    0x00000000    0x16066
+.debug_macro    0x00000000    0x15d58
  .debug_macro   0x00000000      0x312 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_macro   0x00000312      0xa60 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_macro   0x00000d72      0x16f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -3748,68 +3752,62 @@ OUTPUT(PID_STM32F1.elf elf32-littlearm)
  .debug_macro   0x00014406      0x2ee Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
  .debug_macro   0x000146f4      0x2ee Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_macro   0x000149e2      0x2ee Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
- .debug_macro   0x00014cd0      0x389 Src/main.o
- .debug_macro   0x00015059       0x16 Src/main.o
- .debug_macro   0x0001506f       0x35 Src/main.o
- .debug_macro   0x000150a4       0x40 Src/main.o
- .debug_macro   0x000150e4       0x1c Src/main.o
- .debug_macro   0x00015100      0x2f8 Src/stm32f1xx_hal_msp.o
- .debug_macro   0x000153f8      0x302 Src/stm32f1xx_it.o
- .debug_macro   0x000156fa      0x2f4 Src/system_stm32f1xx.o
- .debug_macro   0x000159ee      0x35b pid_lib/pidlib.o
- .debug_macro   0x00015d49       0x58 pid_lib/pidlib.o
- .debug_macro   0x00015da1       0x94 pid_lib/pidlib.o
- .debug_macro   0x00015e35      0x174 pid_lib/pidlib.o
- .debug_macro   0x00015fa9       0x57 pid_lib/pidlib.o
- .debug_macro   0x00016000       0x10 pid_lib/pidlib.o
- .debug_macro   0x00016010       0x3a pid_lib/pidlib.o
- .debug_macro   0x0001604a       0x1c pid_lib/pidlib.o
+ .debug_macro   0x00014cd0      0x383 Src/main.o
+ .debug_macro   0x00015053       0x3a Src/main.o
+ .debug_macro   0x0001508d       0x40 Src/main.o
+ .debug_macro   0x000150cd       0x16 Src/main.o
+ .debug_macro   0x000150e3       0x35 Src/main.o
+ .debug_macro   0x00015118       0x1c Src/main.o
+ .debug_macro   0x00015134      0x2f8 Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x0001542c      0x302 Src/stm32f1xx_it.o
+ .debug_macro   0x0001572e      0x2f4 Src/system_stm32f1xx.o
+ .debug_macro   0x00015a22      0x336 pid_lib/pidlib.o
 
-.debug_line     0x00000000     0x83f8
- .debug_line    0x00000000      0x8c6 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x000008c6      0xc37 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
- .debug_line    0x000014fd      0x9b4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x00001eb1      0x8fe Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x000027af      0x9b0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_line    0x0000315f      0x7c7 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
- .debug_line    0x00003926     0x168e Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
- .debug_line    0x00004fb4      0xc83 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
- .debug_line    0x00005c37      0x8c7 Src/main.o
- .debug_line    0x000064fe      0x787 Src/stm32f1xx_hal_msp.o
- .debug_line    0x00006c85      0x7c1 Src/stm32f1xx_it.o
- .debug_line    0x00007446      0x73c Src/system_stm32f1xx.o
- .debug_line    0x00007b82      0x7f9 pid_lib/pidlib.o
- .debug_line    0x0000837b       0x7d startup/startup_stm32f103xb.o
+.debug_line     0x00000000     0x907e
+ .debug_line    0x00000000      0x9ae Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x000009ae      0xd1f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_line    0x000016cd      0xa9c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x00002169      0x9e6 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x00002b4f      0xa98 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_line    0x000035e7      0x8af Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+ .debug_line    0x00003e96     0x1776 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_line    0x0000560c      0xd6b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_line    0x00006377      0xa26 Src/main.o
+ .debug_line    0x00006d9d      0x86f Src/stm32f1xx_hal_msp.o
+ .debug_line    0x0000760c      0x8a9 Src/stm32f1xx_it.o
+ .debug_line    0x00007eb5      0x824 Src/system_stm32f1xx.o
+ .debug_line    0x000086d9      0x928 pid_lib/pidlib.o
+ .debug_line    0x00009001       0x7d startup/startup_stm32f103xb.o
 
-.debug_str      0x00000000    0x749c4
- .debug_str     0x00000000    0x71d4b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                              0x720cc (size before relaxing)
- .debug_str     0x00071d4b      0x6bf Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
-                              0x720ed (size before relaxing)
- .debug_str     0x0007240a      0x2e1 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
-                              0x7209b (size before relaxing)
- .debug_str     0x000726eb      0x3b0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
-                              0x71de2 (size before relaxing)
- .debug_str     0x00072a9b      0x368 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
-                              0x71e37 (size before relaxing)
- .debug_str     0x00072e03      0x110 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
-                              0x71bc3 (size before relaxing)
- .debug_str     0x00072f13      0xf05 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
-                              0x72b37 (size before relaxing)
- .debug_str     0x00073e18      0x4f1 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
-                              0x723d9 (size before relaxing)
- .debug_str     0x00074309      0x4de Src/main.o
-                              0x728cc (size before relaxing)
- .debug_str     0x000747e7       0x25 Src/stm32f1xx_hal_msp.o
-                              0x722ce (size before relaxing)
- .debug_str     0x0007480c       0xc8 Src/stm32f1xx_it.o
-                              0x71e2a (size before relaxing)
- .debug_str     0x000748d4       0x69 Src/system_stm32f1xx.o
-                              0x71a8d (size before relaxing)
- .debug_str     0x0007493d       0x58 pid_lib/pidlib.o
-                              0x71d62 (size before relaxing)
- .debug_str     0x00074995       0x2f startup/startup_stm32f103xb.o
-                                 0x59 (size before relaxing)
+.debug_str      0x00000000    0x74a39
+ .debug_str     0x00000000    0x71d85 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                              0x72106 (size before relaxing)
+ .debug_str     0x00071d85      0x6bf Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+                              0x72127 (size before relaxing)
+ .debug_str     0x00072444      0x2e1 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+                              0x720d5 (size before relaxing)
+ .debug_str     0x00072725      0x3b0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+                              0x71e1c (size before relaxing)
+ .debug_str     0x00072ad5      0x368 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+                              0x71e71 (size before relaxing)
+ .debug_str     0x00072e3d      0x110 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+                              0x71bfd (size before relaxing)
+ .debug_str     0x00072f4d      0xf05 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+                              0x72b71 (size before relaxing)
+ .debug_str     0x00073e52      0x4f1 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+                              0x72413 (size before relaxing)
+ .debug_str     0x00074343      0x4dd Src/main.o
+                              0x72905 (size before relaxing)
+ .debug_str     0x00074820       0x25 Src/stm32f1xx_hal_msp.o
+                              0x72308 (size before relaxing)
+ .debug_str     0x00074845       0xc8 Src/stm32f1xx_it.o
+                              0x71e64 (size before relaxing)
+ .debug_str     0x0007490d       0x69 Src/system_stm32f1xx.o
+                              0x71ac7 (size before relaxing)
+ .debug_str     0x00074976       0x94 pid_lib/pidlib.o
+                              0x71db2 (size before relaxing)
+ .debug_str     0x00074a0a       0x2f startup/startup_stm32f103xb.o
+                                 0x93 (size before relaxing)
 
 .comment        0x00000000       0x7f
  .comment       0x00000000       0x7f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
