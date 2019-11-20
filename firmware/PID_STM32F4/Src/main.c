@@ -61,7 +61,6 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
 #ifdef RAM_ATTRIBUTE
 
 typedef void (*pid_func_type)(pid_type*);

@@ -19,46 +19,6 @@
 #include "portMCU.h"
 
 
-/**
-  * Data-types definitions according to the user-sets (includes.h must be configured by user)
-  */
-
-#if defined(Q7_OP)
-typedef q7_t   pid_const_t;
-#define SUM(NUM1, NUM2) q7_sum(NUM1, NUM2)
-#define MULT(NUM1, NUM2) q7_mult(NUM1, NUM2)
-#define DIV(NUM1, NUM2) q7_div(NUM1, NUM2)
-
-#elif defined(Q15_OP)
-typedef q15_t   pid_const_t;
-#define SUM(NUM1, NUM2) q15_sum(NUM1, NUM2)
-#define MULT(NUM1, NUM2) q15_mult(NUM1, NUM2)
-#define DIV(NUM1, NUM2) q15_div(NUM1, NUM2)
-
-#elif defined(Q31_OP)
-typedef q31_t   pid_const_t;
-#define SUM(NUM1, NUM2) q31_sum(NUM1, NUM2)
-#define MULT(NUM1, NUM2) q31_mult(NUM1, NUM2)
-#define DIV(NUM1, NUM2) q31_div(NUM1, NUM2)
-
-#else
-#define SUM(NUM1, NUM2) (NUM1 + NUM2)
-#define MULT(NUM1, NUM2) (NUM1 * NUM2)
-#define DIV(NUM1, NUM2) (NUM1 / NUM2)
-
-#if defined(FLOAT_OP)
-typedef float   pid_const_t;
-#elif defined(DOUBLE_OP)
-typedef double   pid_const_t;
-#else
-typedef int   pid_const_t;
-#endif
-
-#endif
-
-
-
-
 /** 
   * @brief  PID-Controller Structure definition  
   * @param  Ka:	Ka-Constant value, where 

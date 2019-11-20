@@ -55,25 +55,12 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define K	(COUNTER_PERIOD - 1) * 3.3 / ADC_RANGE
 
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-#if defined(Q7_OP)
-#include "qn_lib/q7lib.h"
-#define PARSE_OP(NUM) double_to_q7(NUM)
-#elif defined(Q15_OP)
-#include "qn_lib/q15lib.h"
-#define PARSE_OP(NUM) double_to_q15(NUM)
-#elif defined(Q31_OP)
-#include "qn_lib/q31lib.h"
-#define PARSE_OP(NUM) double_to_q31(NUM)
-#else
-#define PARSE_OP(NUM) NUM
-#endif
-
-
 
 #ifdef RAM_RUN
 
@@ -147,7 +134,7 @@ int main(void)
   RAM_CPY(pidLoopRoutine_ram, pidLoopRoutine, alloc);
 #endif
 
-  new_PID(&pid, PARSE_OP(0.4), PARSE_OP(0.24), PARSE_OP(0.16), 1241, 100, 3500);
+  new_PID(&pid, PARSE_OP(0.55 * K), PARSE_OP(-0.8 * K), (int)PARSE_OP(0.35 * K), ADC_RANGE * 0.303, DUTY_RES * 0.01, DUTY_RES * 0.99);
   /* USER CODE END Init */
 
   /* Configure the system clock */
