@@ -32,6 +32,7 @@ Src/main.o: ../Src/main.c \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F4/Inc/portMCU.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F4/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/types_qn.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/pidlib.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/types_qn.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/q7lib.h \
@@ -104,6 +105,8 @@ D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmwar
 D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F4/Inc/portMCU.h:
 
 D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F4/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:
+
+D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/types_qn.h:
 
 D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/pidlib.h:
 

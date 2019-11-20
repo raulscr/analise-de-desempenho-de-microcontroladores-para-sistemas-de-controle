@@ -6,7 +6,7 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-C:/Users/Raul/Dropbox/TCC/pid_lib/pidlib.c 
+D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/pidlib.c 
 
 C_DEPS += \
 ./pid_lib/pidlib.d 
@@ -21,6 +21,6 @@ C_DEPS__QUOTED += \
 "pid_lib\pidlib.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/Raul/Dropbox/TCC/pid_lib/pidlib.c" 
+"D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/pidlib.c" 
 
 

@@ -11,9 +11,11 @@
 #ifndef PORTMCU_H_
 #define PORTMCU_H_
 #include <msp430.h>
+#include <stdint.h>
 
 
-#define     FLOAT_OP
+#define     Q7_OP
+#define     RAM_RUN
 //#define     RAM_ATTRIBUTE
 //#define   TEST_WITH_DIV     5
 
@@ -27,6 +29,36 @@
 #else
 #define ADC_RANGE		1023
 #endif
+
+
+
+#define SET_TEST_PIN                P1OUT |= BIT4
+
+#define RESET_TEST_PIN              P1OUT &= ~BIT4
+
+#define SET_TEST_PIN_2              P1OUT |= BIT5
+
+#define RESET_TEST_PIN_2            P1OUT &= ~BIT5
+
+#define RESET_TIMER_FLAGS           TA0CTL &= ~TAIFG
+
+#ifdef Q7_OP
+#define PID_PERFORM_READ(__INPUT__)     ({                  \
+                                            ADC10CTL0 |= ADC10SC + ENC;\
+                                            while(ADC10CTL1 & ADC10BUSY);\
+                                            __INPUT__ = ADC10MEM;\
+                                        })
+#else
+#define PID_PERFORM_READ(__INPUT__)     ({                  \
+                                            ADC10CTL0 |= ADC10SC + ENC;\
+                                            while(ADC10CTL1 & ADC10BUSY);\
+                                            __INPUT__ = (ADC10MEM >> 3);\
+                                        })
+#endif
+
+#define PID_PERFORM_WRITE(__OUTPUT__)   ({                  \
+                                            TA1CCR1 = __OUTPUT__;\
+                                        })
 
 
 /**
@@ -77,38 +109,5 @@ typedef float   pid_const_t;
 #define DIV(NUM1, NUM2) (NUM1 / NUM2)
 
 #endif
-
-
-
-void setTestPin();
-
-void resetTestPin();
-
-void setTestPinCalc();
-
-void resetTestPinCalc();
-
-
-/*
- * Macro to clear timer flags on ISR
- */
-void resetTimerFlags();
-
-/*
- * Macro to read the ADC
- * if Q7_OP defined, the 12-bits must be ranged to 7-bits (loses 5-bits of resolution)
- * ADC2 must be used carefully, Wireless module must use it
- */
-
-void adcRead(pid_const_t *input);
-
-/*
- * Macro to write at the PWM modules
- * LEDC sounds non-linear
- */
-
-void pwmWrite(pid_const_t output);
-
-
 
 #endif

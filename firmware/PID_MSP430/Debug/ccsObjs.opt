@@ -1,1 +1,1 @@
-"./main.obj" "./pid_lib/pidlib.obj" "./pid_lib/qn_lib/q15lib.obj" "./pid_lib/qn_lib/q31lib.obj" "./pid_lib/qn_lib/q7lib.obj" "../lnk_msp430g2553.cmd" -llibc.a 
+"./PID_MSP430.obj" "./pid_lib/pidlib.obj" "./pid_lib/qn_lib/q15lib.obj" "./pid_lib/qn_lib/q31lib.obj" "./pid_lib/qn_lib/q7lib.obj" "../lnk_msp430g2553.cmd" -llibc.a 

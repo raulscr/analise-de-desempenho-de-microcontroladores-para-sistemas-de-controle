@@ -12,8 +12,9 @@
 #define PORTMCU_H_
 #include "stm32f4xx_hal.h"
 #include "stm32f407xx.h"
+#include "qn_lib/types_qn.h"
 
-#define FLOAT_OP
+#define Q15_OP
 #define RAM_RUN
 //#define TEST_WITH_DIV   		2
 //#define EXCLUDE_PERIPH_OP
@@ -47,11 +48,21 @@
 
 #define RESET_TIMER_FLAGS
 
+#ifdef Q7_OP
 #define PID_PERFORM_READ(__INPUT__)		({					\
 											ADC1->SR |= ADC_FLAG_STRT;\
 											while(!(ADC1->SR & ADC_FLAG_EOC));\
 											ADC1->SR &= ~(ADC_FLAG_STRT | ADC_FLAG_EOC);\
+											__INPUT__ = (ADC1->DR >> 5);\
 										})
+#else
+#define PID_PERFORM_READ(__INPUT__)		({					\
+											ADC1->SR |= ADC_FLAG_STRT;\
+											while(!(ADC1->SR & ADC_FLAG_EOC));\
+											ADC1->SR &= ~(ADC_FLAG_STRT | ADC_FLAG_EOC);\
+											__INPUT__ = ADC1->DR;\
+										})
+#endif
 
 #define PID_PERFORM_WRITE(__OUTPUT__)	({					\
 											TIM1->CCR3 = __OUTPUT__;\
@@ -62,25 +73,33 @@
   * Data-types definitions according to the user-sets (includes.h must be configured by user)
   */
 
+
+/**
+  * Define PARSE-OP according to the data-type used in the operations
+  */
 #if defined(Q7_OP)
 typedef q7_t   pid_const_t;
+#define PARSE_OP(NUM) double_to_q7(NUM)
 #define SUM(NUM1, NUM2) q7_sum(NUM1, NUM2)
 #define MULT(NUM1, NUM2) q7_mult(NUM1, NUM2)
 #define DIV(NUM1, NUM2) q7_div(NUM1, NUM2)
 
 #elif defined(Q15_OP)
 typedef q15_t   pid_const_t;
+#define PARSE_OP(NUM) double_to_q15(NUM)
 #define SUM(NUM1, NUM2) q15_sum(NUM1, NUM2)
 #define MULT(NUM1, NUM2) q15_mult(NUM1, NUM2)
 #define DIV(NUM1, NUM2) q15_div(NUM1, NUM2)
 
 #elif defined(Q31_OP)
 typedef q31_t   pid_const_t;
+#define PARSE_OP(NUM) double_to_q31(NUM)
 #define SUM(NUM1, NUM2) q31_sum(NUM1, NUM2)
 #define MULT(NUM1, NUM2) q31_mult(NUM1, NUM2)
 #define DIV(NUM1, NUM2) q31_div(NUM1, NUM2)
 
 #else
+#define PARSE_OP(NUM) (NUM)
 #define SUM(NUM1, NUM2) (NUM1 + NUM2)
 #define MULT(NUM1, NUM2) (NUM1 * NUM2)
 #define DIV(NUM1, NUM2) (NUM1 / NUM2)

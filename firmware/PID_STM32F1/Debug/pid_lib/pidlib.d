@@ -26,6 +26,7 @@ pid_lib/pidlib.o: \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+ D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/types_qn.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/pidlib.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/types_qn.h \
  D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/q7lib.h \
@@ -84,6 +85,8 @@ D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmwar
 D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
 D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/PID_STM32F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
+
+D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/types_qn.h:
 
 D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/pidlib.h:
 

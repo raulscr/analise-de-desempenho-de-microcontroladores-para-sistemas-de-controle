@@ -63,21 +63,6 @@ typedef struct {
 #error "PID_PERFORM_WRITE(__OUTPUT__) must be defined"
 #endif
 
-/**
-  * Define PARSE-OP according to the data-type used in the operations
-  */
-#if defined(Q7_OP)
-#define PARSE_OP(NUM) double_to_q7(NUM)
-#elif defined(Q15_OP)
-#define PARSE_OP(NUM) double_to_q15(NUM)
-#elif defined(Q31_OP)
-#define PARSE_OP(NUM) double_to_q31(NUM)
-#elif defined(INT_OP)
-#define PARSE_OP(NUM) (int)(NUM)
-#else
-#define PARSE_OP(NUM) NUM
-#endif
-
 
 /**
   * Exported functions

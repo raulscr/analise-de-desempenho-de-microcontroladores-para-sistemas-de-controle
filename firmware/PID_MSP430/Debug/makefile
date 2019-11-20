@@ -10,7 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./main.obj" \
+"./PID_MSP430.obj" \
 "./pid_lib/pidlib.obj" \
 "./pid_lib/qn_lib/q15lib.obj" \
 "./pid_lib/qn_lib/q31lib.obj" \
@@ -148,7 +148,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 PID_MSP430.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.4.LTS/bin/cl430" -vmsp -Ooff --opt_for_speed=0 --use_hw_mpy=none --preinclude="C:/Users/Raul/Dropbox/TCC/pid_lib/qn_lib/q15lib.h" --preinclude="C:/Users/Raul/Dropbox/TCC/pid_lib/qn_lib/q31lib.h" --preinclude="C:/Users/Raul/Dropbox/TCC/pid_lib/qn_lib/q7lib.h" --advice:power="all" --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"PID_MSP430.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccsv8/ccs_base/msp430/include" -i"C:/Users/Raul/Dropbox/TCC/pid_lib/qn_lib" -i"C:/Users/Raul/Dropbox/TCC/pid_lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.4.LTS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="PID_MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "PID_MSP430.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.4.LTS/bin/cl430" -vmsp -Ooff --opt_for_speed=0 --use_hw_mpy=none --preinclude="D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/q15lib.h" --preinclude="D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/q31lib.h" --preinclude="D:/analise-de-desempenho-de-microcontroladores-para-sistemas-de-controle/firmware/lib/pid_lib/qn_lib/q7lib.h" --advice:power="all" --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"PID_MSP430.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccsv8/ccs_base/msp430/include" -i"C:/Users/Raul/Dropbox/TCC/pid_lib/qn_lib" -i"C:/Users/Raul/Dropbox/TCC/pid_lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.4.LTS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="PID_MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "PID_MSP430.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
@@ -162,8 +162,8 @@ PID_MSP430.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "pid_lib\pidlib.obj" "pid_lib\qn_lib\q15lib.obj" "pid_lib\qn_lib\q31lib.obj" "pid_lib\qn_lib\q7lib.obj" 
-	-$(RM) "main.d" "pid_lib\pidlib.d" "pid_lib\qn_lib\q15lib.d" "pid_lib\qn_lib\q31lib.d" "pid_lib\qn_lib\q7lib.d" 
+	-$(RM) "PID_MSP430.obj" "pid_lib\pidlib.obj" "pid_lib\qn_lib\q15lib.obj" "pid_lib\qn_lib\q31lib.obj" "pid_lib\qn_lib\q7lib.obj" 
+	-$(RM) "PID_MSP430.d" "pid_lib\pidlib.d" "pid_lib\qn_lib\q15lib.d" "pid_lib\qn_lib\q31lib.d" "pid_lib\qn_lib\q7lib.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
