@@ -4,3 +4,4 @@ firmware/*.o
 firmware/*.o
 firmware/**/Debug
 firmware/**/Release
+firmware/PID_ESP32/build
