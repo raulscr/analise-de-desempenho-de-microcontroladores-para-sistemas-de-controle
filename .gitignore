@@ -1,11 +1,5 @@
 firmware/PID_STM32F1_V3
 firmware/PID_ESP32_V3
 firmware/*.o
-firmware/PID_MSP430/Debug/
-firmware/PID_MSP430/Release/
-firmware/PID_ESP32/Debug/
-firmware/PID_ESP32/Release/
-firmware/PID_STM32F1/Debug/
-firmware/PID_STM32F1/Release/
-firmware/PID_STM32F4/Debug/
-firmware/PID_STM32F4/Release/
+firmware/*/Debug
+firmware/*/Release
