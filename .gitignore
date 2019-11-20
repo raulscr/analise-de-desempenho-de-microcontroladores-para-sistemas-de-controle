@@ -1,7 +1,7 @@
+*.o
+*.o
+**/Debug
+**/Release
+firmware/PID_ESP32/build
 firmware/PID_STM32F1_V3
 firmware/PID_ESP32_V3
-firmware/*.o
-firmware/*.o
-firmware/**/Debug
-firmware/**/Release
-firmware/PID_ESP32/build
