@@ -1,5 +1,5 @@
 stack_check.o: /home/raul/esp32/esp-idf/components/esp32/stack_check.c \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_system.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdint.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -58,7 +58,7 @@ stack_check.o: /home/raul/esp32/esp-idf/components/esp32/stack_check.c \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /home/raul/esp32/esp-idf/components/soc/esp32/include/soc/touch_channel.h
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/esp32/include/esp_system.h:
 

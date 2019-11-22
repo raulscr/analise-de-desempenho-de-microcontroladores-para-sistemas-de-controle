@@ -1,3 +1,15 @@
+/**
+  ******************************************************************************
+  * @file    q7lib.h
+  * @author  Raul Scarmocin
+  * @version V1.0.0
+  * @date    30-May-2019
+  * @brief   This file provides the Q7 addition, multiplication and division functions
+  * @note    Subraction is a particular case of addition
+  ******************************************************************************
+  */
+
+/* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef Q7LIB_H_
 #define Q7LIB_H_
 

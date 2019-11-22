@@ -1,5 +1,5 @@
 spiram_psram.o: /home/raul/esp32/esp-idf/components/esp32/spiram_psram.c \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/string.h \
  /home/raul/esp32/esp-idf/components/newlib/include/_ansi.h \
  /home/raul/esp32/esp-idf/components/newlib/include/newlib.h \
@@ -75,7 +75,7 @@ spiram_psram.o: /home/raul/esp32/esp-idf/components/esp32/spiram_psram.c \
  /home/raul/esp32/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/raul/esp32/esp-idf/components/driver/include/driver/periph_ctrl.h
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/string.h:
 

@@ -1,3 +1,15 @@
+/**
+  ******************************************************************************
+  * @file    q15lib.h
+  * @author  Raul Scarmocin
+  * @version V1.0.0
+  * @date    30-May-2019
+  * @brief   This file provides the Q15 addition, multiplication and division functions
+  * @note    Subraction is a particular case of addition
+  ******************************************************************************
+  */
+
+/* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef Q15LIB_H_
 #define Q15LIB_H_
 

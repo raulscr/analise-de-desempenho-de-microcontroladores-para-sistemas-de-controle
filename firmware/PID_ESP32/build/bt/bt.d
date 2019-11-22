@@ -22,7 +22,7 @@ bt.o: /home/raul/esp32/esp-idf/components/bt/bt.c \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/stdio.h \
  /home/raul/esp32/esp-idf/components/newlib/include/string.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/string.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdint.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -150,7 +150,7 @@ bt.o: /home/raul/esp32/esp-idf/components/bt/bt.c \
 
 /home/raul/esp32/esp-idf/components/newlib/include/sys/string.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/heap/include/esp_heap_caps.h:
 

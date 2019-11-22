@@ -1,6 +1,6 @@
 pm_trace.o: /home/raul/esp32/esp-idf/components/esp32/pm_trace.c \
  /home/raul/esp32/esp-idf/components/esp32/pm_trace.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/driver/include/driver/gpio.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_err.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdint.h \
@@ -44,7 +44,7 @@ pm_trace.o: /home/raul/esp32/esp-idf/components/esp32/pm_trace.c \
 
 /home/raul/esp32/esp-idf/components/esp32/pm_trace.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/driver/include/driver/gpio.h:
 

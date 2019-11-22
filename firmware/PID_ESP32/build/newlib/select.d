@@ -24,7 +24,7 @@ select.o: /home/raul/esp32/esp-idf/components/newlib/select.c \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/reent.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/hal.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -141,7 +141,7 @@ select.o: /home/raul/esp32/esp-idf/components/newlib/select.c \
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

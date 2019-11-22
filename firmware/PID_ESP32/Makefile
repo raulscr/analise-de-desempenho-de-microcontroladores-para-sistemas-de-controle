@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := PID_ESP32_soc
+PROJECT_NAME := PID_ESP32
 
 #EXCLUDE_COMPONENTS := 
 

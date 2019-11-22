@@ -1,5 +1,5 @@
 int_wdt.o: /home/raul/esp32/esp-idf/components/esp32/int_wdt.c \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdint.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/_default_types.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/features.h \
@@ -90,7 +90,7 @@ int_wdt.o: /home/raul/esp32/esp-idf/components/esp32/int_wdt.c \
  /home/raul/esp32/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_int_wdt.h
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/stdint.h:
 

@@ -24,7 +24,7 @@ port/minicheck.o: \
  /home/raul/esp32/esp-idf/components/newlib/include/setjmp.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/setjmp.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/expat/include/expat/internal.h \
  /home/raul/esp32/esp-idf/components/expat/port/include/minicheck.h
@@ -77,7 +77,7 @@ port/minicheck.o: \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

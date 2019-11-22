@@ -1,29 +1,40 @@
 #include <stdio.h>
-#include "includes.h"
+#include "portMCU.h"
+
 #include "pid_lib/pidlib.h"
-#include "pid_lib/qn_lib/q7lib.h"
-#include "pid_lib/qn_lib/q15lib.h"
-#include "pid_lib/qn_lib/q31lib.h"
 
 
-#if defined(Q7_OP)
-#define PARSE_OP(NUM) double_to_q7(NUM)
-#elif defined(Q15_OP)
-#define PARSE_OP(NUM) double_to_q15(NUM)
-#elif defined(Q31_OP)
-#define PARSE_OP(NUM) double_to_q31(NUM)
-#elif defined(INT_OP)
-#define PARSE_OP(NUM) (int)(NUM * 32)
-#else
-#define PARSE_OP(NUM) NUM
-#endif
+#include "driver/adc.h"
 
 pid_type pid;
 
+#ifdef CORE1_TASK_DEF_2
+
+uint8_t print_loop = 0;
+
+void core1_task_2(void *arg){
+	uint32_t time_ms = 0;
+	while(1){
+		if(print_loop){
+			printf("%d,%1.2f,%1.2f\n", (int)(time_ms * 1000000UL / FREQ_TIM),
+				 3.3 * pid.input / ADC_RANGE, (float)pid.output/DUTY_RES);
+			print_loop = 0;
+			time_ms++;
+		}
+	}
+}
+
+#endif
 
 
 void IRAM_ATTR TIMER0G0_ISR(void* arg){
-	pidInterruptRoutine(&pid);
+	#ifdef CORE1_TASK_DEF_2
+	print_loop = 1;
+	#endif
+	SET_TEST_PIN;
+	RESET_TIMER_FLAGS;
+	pid.loop = 1;
+	
 }
 
 static void configGPIO(){
@@ -34,46 +45,33 @@ static void configGPIO(){
 static void configADC(){
 
 #ifdef ADC1_READ
+
 	//Configure ADC1 (Channel 6 -> GPIO 34)
 
 	// disable HALL sensor
 	REG_CLR_BIT(RTC_IO_HALL_SENS_REG, RTC_IO_XPD_HALL);
 
-
 	// set ADC-CTRL-RTC controller
-	REG_SET_BIT(SENS_SAR_START_FORCE_REG, 0xF);
-	// 11dB atten all pads
-	REG_WRITE(SENS_SAR_ATTEN1_REG, 0xFFFFFFFF);
+	REG_SET_BIT(SENS_SAR_START_FORCE_REG, SENS_SAR2_BIT_WIDTH + SENS_SAR2_BIT_WIDTH_V);
+	REG_SET_BIT(SENS_SAR_MEAS_START1_REG, SENS_MEAS1_START_FORCE);
+	REG_SET_BIT(SENS_SAR_MEAS_START1_REG, SENS_SAR1_EN_PAD_FORCE);
+	REG_CLR_BIT(SENS_SAR_READ_CTRL_REG, SENS_SAR1_DIG_FORCE);
+	REG_SET_BIT(SENS_SAR_TOUCH_CTRL1_REG, SENS_XPD_HALL_FORCE);
+	REG_SET_BIT(SENS_SAR_TOUCH_CTRL1_REG, SENS_HALL_PHASE_FORCE);
+
+	// reverse input bits
+	REG_SET_BIT(SENS_SAR_READ_CTRL_REG, SENS_SAR1_DATA_INV);
+	
+	REG_WRITE(SENS_SAR_ATTEN1_REG, 0x3 << 12);
 
 	// set channel in SAR_MEAS_START1
 	REG_SET_BIT(SENS_SAR_MEAS_START1_REG, BIT(6 + SENS_SAR1_EN_PAD_S));
 
-	REG_SET_BIT(SENS_SAR_MEAS_START1_REG, SENS_MEAS1_START_FORCE);
-	REG_SET_BIT(SENS_SAR_MEAS_START1_REG, SENS_SAR1_EN_PAD_FORCE);
-	REG_SET_BIT(SENS_SAR_TOUCH_CTRL1_REG, SENS_XPD_HALL_FORCE);
-	REG_SET_BIT(SENS_SAR_TOUCH_CTRL1_REG, SENS_HALL_PHASE_FORCE);
-	REG_CLR_BIT(SENS_SAR_READ_CTRL_REG, SENS_SAR1_DIG_FORCE);
-
-	REG_CLR_BIT(SENS_SAR_READ_CTRL_REG, SENS_SAR1_CLK_DIV_M);
-
-	//force power up
-	REG_SET_BIT(SENS_SAR_MEAS_WAIT2_REG, SENS_FORCE_XPD_SAR_PU);
-
-	// disable all another fuck 
-	REG_CLR_BIT(SENS_SAR_MEAS_CTRL_REG, SENS_AMP_RST_FB_FSM_M);
-	REG_CLR_BIT(SENS_SAR_MEAS_CTRL_REG, SENS_AMP_SHORT_REF_FSM_M);
-	REG_CLR_BIT(SENS_SAR_MEAS_CTRL_REG, SENS_AMP_SHORT_REF_GND_FSM_M);
-
-	REG_SET_BIT(SENS_SAR_MEAS_WAIT1_REG, SENS_SAR_AMP_WAIT1_M);
-	REG_SET_BIT(SENS_SAR_MEAS_WAIT1_REG, SENS_SAR_AMP_WAIT2_M);
-	REG_SET_BIT(SENS_SAR_MEAS_WAIT2_REG, SENS_SAR_AMP_WAIT2_M);
-
-	//inverse (why the hell the input is getting iverted??!))
-	REG_SET_BIT(SENS_SAR_READ_CTRL_REG, SENS_SAR1_DATA_INV);
+	adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11);
+	adc1_get_raw(ADC_CHANNEL_6);
 
 #else
 	//Configure ADC2 (Channel 6 -> GPIO 14)
-
 	// disable HALL sensor
 	REG_CLR_BIT(RTC_IO_HALL_SENS_REG, RTC_IO_XPD_HALL);
 
@@ -102,11 +100,14 @@ static void configADC(){
 
 	// set channel in SAR_MEAS_START1
 	REG_SET_BIT(SENS_SAR_MEAS_START2_REG, SENS_SAR2_EN_PAD_FORCE);
-	REG_SET_BIT(SENS_SAR_MEAS_START2_REG, 7 << SENS_SAR2_EN_PAD_S);
+	REG_SET_BIT(SENS_SAR_MEAS_START2_REG, BIT(6 + SENS_SAR1_EN_PAD_S));
 	REG_SET_BIT(SENS_SAR_MEAS_START2_REG, SENS_MEAS2_START_FORCE);
 
 	// 11dB atten all pads
-	REG_WRITE(SENS_SAR_ATTEN2_REG, 0xFFFFFFFF);
+	REG_WRITE(SENS_SAR_ATTEN2_REG, 0x3 << 12);
+
+
+	//adc2_get_raw(ADC_CHANNEL_6, ADC_WIDTH_12Bit, (int*)&input);
 #endif
 
 }
@@ -153,12 +154,10 @@ static void configPWM(){
 	REG_SET_BIT(IO_MUX_GPIO18_REG, FUNC_GPIO18_GPIO18);
 
 
-	uint32_t periodo = APB_CLK_FREQ / 8 / PWM_FREQ;
-
-	REG_SET_BIT(MCPWM_CLK_CFG_REG(0), 15);						// prescaler
-	REG_SET_BIT(MCPWM_TIMER0_CFG0_REG(0), 0x0 << MCPWM_TIMER0_PRESCALE_S);		// prescaler again	
-	REG_SET_BIT(MCPWM_TIMER0_CFG0_REG(0), periodo << MCPWM_TIMER0_PERIOD_S);	// Fpwm = Fclk/count/(Presc + 1) -> 2k = 1M/count/(1)
-	REG_SET_BIT(MCPWM_TIMER0_CFG0_REG(0), 0x0 << MCPWM_TIMER0_PERIOD_UPMETHOD_S);	// update when the count turn to 0
+	REG_SET_BIT(MCPWM_CLK_CFG_REG(0), (uint32_t)(160000000UL / DUTY_RES / PWM_FREQ - 1));		// prescaler
+	REG_SET_BIT(MCPWM_TIMER0_CFG0_REG(0), 0 << MCPWM_TIMER0_PRESCALE_S);				// timer prescaler	
+	REG_SET_BIT(MCPWM_TIMER0_CFG0_REG(0), (uint32_t)(DUTY_RES / 1.28) << MCPWM_TIMER0_PERIOD_S);
+	REG_SET_BIT(MCPWM_TIMER0_CFG0_REG(0), 0x0 << MCPWM_TIMER0_PERIOD_UPMETHOD_S);			// update when the count turn to 0
 	REG_SET_BIT(MCPWM_TIMER0_CFG1_REG(0), 0x1 << MCPWM_TIMER0_MOD_S);		// up mode
 	REG_SET_BIT(MCPWM_GEN0_STMP_CFG_REG(0), BIT(1) << MCPWM_GEN0_A_UPMETHOD_S);	// TEZ
 	REG_SET_BIT(MCPWM_GEN0_STMP_CFG_REG(0), BIT(1) << MCPWM_GEN0_B_UPMETHOD_S);	// TEZ
@@ -197,7 +196,7 @@ static void configTIM(){
 	REG_SET_BIT(TIMG_T0LO_REG(0), 0);
 	REG_SET_BIT(TIMG_T0HI_REG(0), 0);
 
-	uint64_t alarm_val = (uint64_t)APB_CLK_FREQ / 16 / FREQ_TIM;
+	uint64_t alarm_val = (uint64_t)APB_CLK_FREQ / 17 / FREQ_TIM;
 	REG_WRITE(TIMG_T0ALARMHI_REG(0), (uint32_t)(alarm_val >> 32));
 	REG_WRITE(TIMG_T0ALARMLO_REG(0), (uint32_t)alarm_val);
 
@@ -217,27 +216,19 @@ static void configTIM(){
 	xt_ints_on(BIT(13));
 	DPORT_REG_SET_BIT(DPORT_APP_TG_T0_LEVEL_INT_MAP_REG, 13);
 
-
-
 	REG_SET_BIT(TIMG_T0CONFIG_REG(0), TIMG_T0_EN);
 
 }
 
-
-void core1_task_2(void *arg){
-	while(1){
-		printf("%d, %d\n", pid.input, pid.output);
-		vTaskDelay(1000 / portTICK_PERIOD_MS);
-	}
-}
-
 void app_main(){
-	#ifdef CORE1_TASK_DEF
-	xTaskCreatePinnedToCore(&core1_task, "core1_task", 1024 * 8, (void*)&pid, 5, NULL, 1);
-	#else
+
+	#ifdef CORE1_TASK_DEF_2
+
 	xTaskCreatePinnedToCore(&core1_task_2, "core1_task", 1024 * 8, (void*)NULL, 5, NULL, 1);
+
 	#endif
-	new_PID(&pid, PARSE_OP(0.05), PARSE_OP(0.03), PARSE_OP(0.02), ADC_RANGE * 0.26, DUTY_RES * 0.01, DUTY_RES * 0.99);
+
+	new_PID(&pid,	PARSE_OP(0.5864), PARSE_OP(-0.8765), PARSE_OP(0.3315), ADC_RANGE * 0.303, DUTY_RES * 0.01, DUTY_RES * 0.99);
 
 	configGPIO();
 	configPWM();

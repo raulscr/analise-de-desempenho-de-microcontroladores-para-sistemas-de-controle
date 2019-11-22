@@ -15,7 +15,7 @@ heap_caps.o: /home/raul/esp32/esp-idf/components/heap/heap_caps.c \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/cdefs.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/string.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdlib.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/raul/esp32/esp-idf/components/newlib/include/alloca.h \
@@ -118,7 +118,7 @@ heap_caps.o: /home/raul/esp32/esp-idf/components/heap/heap_caps.c \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/stdlib.h:
 

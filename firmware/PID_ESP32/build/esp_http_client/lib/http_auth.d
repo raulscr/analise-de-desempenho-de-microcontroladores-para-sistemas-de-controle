@@ -31,7 +31,7 @@ lib/http_auth.o: \
  /home/raul/esp32/esp-idf/components/esp32/include/rom/queue.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_err.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_interface.h \
  /home/raul/esp32/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
@@ -187,7 +187,7 @@ lib/http_auth.o: \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

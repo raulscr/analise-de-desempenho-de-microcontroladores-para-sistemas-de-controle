@@ -21,7 +21,7 @@ esp32/soc_memory_layout.o: \
  /home/raul/esp32/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_assert.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_attr.h \
@@ -70,7 +70,7 @@ esp32/soc_memory_layout.o: \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

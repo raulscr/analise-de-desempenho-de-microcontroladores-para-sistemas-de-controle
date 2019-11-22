@@ -1,3 +1,15 @@
+/**
+  ******************************************************************************
+  * @file    q31lib.h
+  * @author  Raul Scarmocin
+  * @version V1.0.0
+  * @date    30-May-2019
+  * @brief   This file provides the Q31 addition, multiplication and division functions
+  * @note    Subraction is a particular case of addition
+  ******************************************************************************
+  */
+
+/* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef Q31LIB_H_
 #define Q31LIB_H_
 

@@ -70,11 +70,6 @@
 
 
 /**
-  * Data-types definitions according to the user-sets (includes.h must be configured by user)
-  */
-
-
-/**
   * Define PARSE-OP according to the data-type used in the operations
   */
 #if defined(Q7_OP)

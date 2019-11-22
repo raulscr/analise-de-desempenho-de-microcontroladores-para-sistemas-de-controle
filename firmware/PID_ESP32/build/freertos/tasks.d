@@ -23,7 +23,7 @@ tasks.o: /home/raul/esp32/esp-idf/components/freertos/tasks.c \
  /home/raul/esp32/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_assert.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/esp_newlib.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_panic.h \
@@ -141,7 +141,7 @@ tasks.o: /home/raul/esp32/esp-idf/components/freertos/tasks.c \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

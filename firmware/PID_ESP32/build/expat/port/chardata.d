@@ -3,7 +3,7 @@ port/chardata.o: \
  /home/raul/esp32/esp-idf/components/expat/include/expat/expat_config.h \
  /home/raul/esp32/esp-idf/components/expat/port/include/minicheck.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdlib.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/ieeefp.h \
  /home/raul/esp32/esp-idf/components/newlib/include/_ansi.h \
@@ -38,7 +38,7 @@ port/chardata.o: \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/stdlib.h:
 

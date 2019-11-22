@@ -41,7 +41,7 @@ nghttp2/lib/nghttp2_stream.o: \
  /home/raul/esp32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_map.h \
  /home/raul/esp32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_pq.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_session.h \
  /home/raul/esp32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h \
@@ -130,7 +130,7 @@ nghttp2/lib/nghttp2_stream.o: \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

@@ -26,7 +26,7 @@ esp_ota_ops.o: \
  /home/raul/esp32/esp-idf/components/newlib/include/string.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/string.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -152,7 +152,7 @@ esp_ota_ops.o: \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

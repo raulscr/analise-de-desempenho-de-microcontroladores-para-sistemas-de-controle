@@ -26,7 +26,7 @@ event_loop.o: /home/raul/esp32/esp-idf/components/esp32/event_loop.c \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/sched.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/stdio.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_wifi.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -182,7 +182,7 @@ event_loop.o: /home/raul/esp32/esp-idf/components/esp32/event_loop.c \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

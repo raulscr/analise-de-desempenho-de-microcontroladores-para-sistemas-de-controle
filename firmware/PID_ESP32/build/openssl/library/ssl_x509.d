@@ -10,7 +10,7 @@ library/ssl_x509.o: \
  /home/raul/esp32/esp-idf/components/openssl/include/internal/ssl_methods.h \
  /home/raul/esp32/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  /home/raul/esp32/esp-idf/components/openssl/include/platform/ssl_opt.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/openssl/include/platform/ssl_port.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_types.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/cdefs.h \
@@ -67,7 +67,7 @@ library/ssl_x509.o: \
 
 /home/raul/esp32/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/openssl/include/platform/ssl_port.h:
 

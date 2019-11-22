@@ -20,7 +20,7 @@ src/secure_boot.o: \
  /home/raul/esp32/esp-idf/components/newlib/include/stdint.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/raul/esp32/esp-idf/components/log/include/esp_log.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/esp32/include/rom/ets_sys.h \
  /home/raul/esp32/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_assert.h \
@@ -107,7 +107,7 @@ src/secure_boot.o: \
 
 /home/raul/esp32/esp-idf/components/log/include/esp_log.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/esp32/include/rom/ets_sys.h:
 

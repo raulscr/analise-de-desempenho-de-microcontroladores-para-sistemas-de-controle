@@ -32,7 +32,7 @@ core/def.o: /home/raul/esp32/esp-idf/components/lwip/core/def.c \
  /home/raul/esp32/esp-idf/components/vfs/include/sys/ioctl.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/sys/select.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_task.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_system.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdint.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -170,7 +170,7 @@ core/def.o: /home/raul/esp32/esp-idf/components/lwip/core/def.c \
 
 /home/raul/esp32/esp-idf/components/esp32/include/esp_task.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/esp32/include/esp_system.h:
 

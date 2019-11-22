@@ -16,7 +16,7 @@ spiram.o: /home/raul/esp32/esp-idf/components/esp32/spiram.c \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/lock.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/cdefs.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/string.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_attr.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_err.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdio.h \
@@ -123,7 +123,7 @@ spiram.o: /home/raul/esp32/esp-idf/components/esp32/spiram.c \
 
 /home/raul/esp32/esp-idf/components/newlib/include/sys/string.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/esp32/include/esp_attr.h:
 

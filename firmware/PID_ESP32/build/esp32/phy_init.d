@@ -23,7 +23,7 @@ phy_init.o: /home/raul/esp32/esp-idf/components/esp32/phy_init.c \
  /home/raul/esp32/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/raul/esp32/esp-idf/components/esp32/include/esp_assert.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/esp32/include/rom/rtc.h \
  /home/raul/esp32/esp-idf/components/esp32/include/rom/ets_sys.h \
@@ -190,7 +190,7 @@ phy_init.o: /home/raul/esp32/esp-idf/components/esp32/phy_init.c \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

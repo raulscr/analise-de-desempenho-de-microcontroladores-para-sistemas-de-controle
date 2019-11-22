@@ -22,7 +22,7 @@ port/crypto_hash_mbedtls/crypto_hash_sha256_mbedtls.o: \
  /home/raul/esp32/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
  /home/raul/esp32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
  /home/raul/esp32/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/raul/esp32/esp-idf/components/newlib/include/limits.h \
  /home/raul/esp32/esp-idf/components/newlib/include/string.h \
@@ -72,7 +72,7 @@ port/crypto_hash_mbedtls/crypto_hash_sha256_mbedtls.o: \
 
 /home/raul/esp32/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

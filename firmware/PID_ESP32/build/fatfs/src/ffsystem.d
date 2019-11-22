@@ -10,7 +10,7 @@ src/ffsystem.o: /home/raul/esp32/esp-idf/components/fatfs/src/ffsystem.c \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/syslimits.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/endian.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/param.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/reent.h \
  /home/raul/esp32/esp-idf/components/newlib/include/_ansi.h \
@@ -107,7 +107,7 @@ src/ffsystem.o: /home/raul/esp32/esp-idf/components/fatfs/src/ffsystem.c \
 
 /home/raul/esp32/esp-idf/components/newlib/include/machine/param.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

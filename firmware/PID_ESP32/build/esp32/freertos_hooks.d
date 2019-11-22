@@ -20,7 +20,7 @@ freertos_hooks.o: \
  /home/raul/esp32/esp-idf/components/newlib/include/alloca.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/hal.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -122,7 +122,7 @@ freertos_hooks.o: \
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

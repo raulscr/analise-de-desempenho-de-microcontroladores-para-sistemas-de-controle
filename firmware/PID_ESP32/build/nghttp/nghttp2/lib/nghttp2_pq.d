@@ -33,7 +33,7 @@ nghttp2/lib/nghttp2_pq.o: \
  /home/raul/esp32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_int.h \
  /home/raul/esp32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/assert.h \
  /home/raul/esp32/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h
 
@@ -103,7 +103,7 @@ nghttp2/lib/nghttp2_pq.o: \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/assert.h:
 

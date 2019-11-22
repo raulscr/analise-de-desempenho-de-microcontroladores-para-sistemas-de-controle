@@ -12,7 +12,7 @@ portasm.o: /home/raul/esp32/esp-idf/components/freertos/portasm.S \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/corebits.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/config/system.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
@@ -45,7 +45,7 @@ portasm.o: /home/raul/esp32/esp-idf/components/freertos/portasm.S \
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

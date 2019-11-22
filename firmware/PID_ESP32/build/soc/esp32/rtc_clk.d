@@ -4,7 +4,7 @@ esp32/rtc_clk.o: /home/raul/esp32/esp-idf/components/soc/esp32/rtc_clk.c \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/features.h \
  /home/raul/esp32/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/newlib/include/stdlib.h \
  /home/raul/esp32/esp-idf/components/newlib/include/machine/ieeefp.h \
  /home/raul/esp32/esp-idf/components/newlib/include/_ansi.h \
@@ -71,7 +71,7 @@ esp32/rtc_clk.o: /home/raul/esp32/esp-idf/components/soc/esp32/rtc_clk.c \
 
 /home/raul/esp32/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/newlib/include/stdlib.h:
 

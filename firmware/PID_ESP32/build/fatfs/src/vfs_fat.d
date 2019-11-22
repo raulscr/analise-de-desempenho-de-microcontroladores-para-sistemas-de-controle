@@ -36,7 +36,7 @@ src/vfs_fat.o: /home/raul/esp32/esp-idf/components/fatfs/src/vfs_fat.c \
  /home/raul/esp32/esp-idf/components/vfs/include/esp_vfs.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h \
+ /home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h \
  /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/hal.h \
  /home/raul/esp32/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -181,7 +181,7 @@ src/vfs_fat.o: /home/raul/esp32/esp-idf/components/fatfs/src/vfs_fat.c \
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/raul/esp32/workspace32/PID_ESP32_soc/build/include/sdkconfig.h:
+/home/raul/esp32/workspace32/PID_ESP32/build/include/sdkconfig.h:
 
 /home/raul/esp32/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
